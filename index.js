@@ -10,8 +10,8 @@ const client = new Client({
     ]
 });
 
-const BOT_TOKEN = "BURAYA_TOKEN_GELICEK";
-const SES_KANAL_ID = "BURAYA_KANAL_ID_GELICEK";
+const BOT_TOKEN = process.env.DISCORD_TOKEN;
+const SES_KANAL_ID = process.env.SES_KANAL_ID;
 let voiceConnection = null;
 
 client.once('ready', () => {
