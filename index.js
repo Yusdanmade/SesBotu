@@ -35,10 +35,12 @@ async function sesKanalinaGir() {
             return;
         }
 
-        voiceConnection = joinVoiceChannel({
+voiceConnection = joinVoiceChannel({
             channelId: SES_KANAL_ID,
             guildId: guild.id,
-            adapterCreator: guild.voiceAdapterCreator
+            adapterCreator: guild.voiceAdapterCreator,
+            selfMute: false,
+            selfDeaf: false
         });
 
         console.log(`"${voiceChannel.name}" ses kanalına girildi.`);
