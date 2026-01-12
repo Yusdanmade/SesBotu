@@ -12,6 +12,9 @@ const client = new Client({
 
 const BOT_TOKEN = process.env.DISCORD_TOKEN;
 const SES_KANAL_ID = process.env.SES_KANAL_ID;
+
+console.log('Token:', BOT_TOKEN ? 'Var' : 'Yok');
+console.log('Kanal ID:', SES_KANAL_ID ? 'Var' : 'Yok');
 let voiceConnection = null;
 
 client.once('ready', () => {
