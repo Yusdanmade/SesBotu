@@ -16,8 +16,8 @@
    copy .env.example .env
    ```
 5. `.env` dosyasını açıp bilgileri girin:
-   - DISCORD_TOKEN: Bot tokenınız
-   - SES_KANAL_ID: Girilecek ses kanalının ID'si
+   - DISCORD_TOKEN: Discord Developer Portal'dan aldığınız bot token
+   - SES_KANAL_ID: Discord'da ses kanalına sağ tıklayıp "Kanal ID'sini Kopyala" dediğinizde gelen ID
 
 ## Çalıştırma
 
